@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        th,td{
+            padding: 8px;
+            text-align: center;
+        }
+        button{
+            background-color: aqua;
+            width: 100%;
+        }
+        #f1{
+            background-color: bisque;
+        }
+        #t2{
+            background-color: cornsilk;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>STUDENT FORM</h1>
+<div>
+
+
+<form id="f1">
+    
+        <table>
+            <tbody>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>  
+                <input id="name" type="text" name="name"  required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Age
+            </td>
+            <td>    
+                <input id="age" type="number" name="age" min="1" max="25" style="width: 95%;" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender
+            </td>
+            <td >
+                
+                <input  name="gender" id="gender" type="radio" value="male">Male
+
+                <input name="gender" id="gender" type="radio" value="female">Female
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Course
+            </td>
+            <td>
+        <select id="course" name="course" required style="width: 100%;">
+            <option value="">Select a cource</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+        </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                <input id="email" name="email" type="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" id="save" >Save</button></td>
+        </tr>
+        </tbody>
+        </table>
+
+        
+    
+</form>
+</div>
+
+
+<h1>UPDATED INFORMATION</h1>
+
+<div>
+    
+    
+        <table id="t2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                    
+                </tr>
+
+                
+            </thead>
+            
+        </table>
+
+
+    
+</div>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>
